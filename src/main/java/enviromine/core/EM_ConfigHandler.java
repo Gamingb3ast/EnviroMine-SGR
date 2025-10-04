@@ -666,8 +666,17 @@ public class EM_ConfigHandler {
         EM_Settings.stoneCracks = config.get(CATEGORY_PHYSICS, "Stone Cracks Before Falling", EM_Settings.stoneCracks)
             .getBoolean(EM_Settings.stoneCracks);
         EM_Settings.defaultStability = config
-            .get(CATEGORY_PHYSICS, "Default Stability Type (BlockIDs > 175)", EM_Settings.defaultStability)
+            .get(
+                CATEGORY_PHYSICS,
+                "Default Stability Type (Used if no other type can be applied) (BlockIDs > 175)",
+                EM_Settings.defaultStability)
             .getString();
+        EM_Settings.setDefaultStabilityToOverwrite = config
+            .get(
+                CATEGORY_PHYSICS,
+                "Makes default Stability Overwrite all stability (Except those set by CustomProperties)",
+                EM_Settings.setDefaultStabilityToOverwrite)
+            .getBoolean();
         EM_Settings.waterCollapse = config.get(CATEGORY_PHYSICS, "Water Causes Collapse", EM_Settings.waterCollapse)
             .getBoolean(EM_Settings.waterCollapse); // Added out of necessity/annoyance -- AstroTibs
 

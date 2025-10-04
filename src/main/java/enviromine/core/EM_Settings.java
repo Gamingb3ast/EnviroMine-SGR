@@ -406,6 +406,7 @@ public class EM_Settings {
     public static int updateCap = 128;
     public static boolean stoneCracks = true;
     public static String defaultStability = "loose";
+    public static boolean setDefaultStabilityToOverwrite = false;
 
     public static double sanityMult = 1.0D;
     public static double hydrationMult = 1.0D;

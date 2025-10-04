@@ -229,7 +229,8 @@ public class EnviroUtils {
             if (EM_Settings.loggerVerbosity >= EnumLogVerbosity.LOW.getLevel()) EnviroMine.logger
                 .log(Level.ERROR, "Block " + block.getUnlocalizedName() + " has a null StabilityType. Crash imminent!");
         }
-
+        if (EM_Settings.setDefaultStabilityToOverwrite)
+            type = EM_Settings.stabilityTypes.get(EM_Settings.defaultStability);
         return type;
     }
 
