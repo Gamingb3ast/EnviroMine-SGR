@@ -3,15 +3,6 @@
 
 ---
 
-# DEPRECATED
-
-Development is currently suspended.
-
-The latest version of the mod is `1.3.148-FINAL`
-Apart from fixing critical bugs, no more changes are planned
-
----
-
 #### REQUIRES [UNIMIXINS](https://github.com/LegacyModdingMC/UniMixins/releases)
 
 #### IMPORTANT:
